@@ -1,7 +1,7 @@
 # Un Arduino en mi ascensor
-Un edificio antiguo y un garage al nivel del mar es lo que tiene. Que se inunda. 
-Llevamos años con el problema de agua en el foso del ascensor. Como es de imaginar, este es un ambiente hostil para la electrónica y la mecánica. Lo que me ha llevado a fracasar con soluciones como la de colocar de mil maneras el nterruptor flotante de una bomba de achique o un microcontrolador con sensores de nivel por resistividad.
-La clave es no utilizar un sensor que esté en contacto con un agua salada, con aceites y más de una incívica colilla. 
+Vivo en un edificio antiguo y con un garage al nivel del mar. ¿Y que es lo que pasa? Que el foso del ascensor se nos inunda. 
+Llevamos años aplicando diferentes soluciones que el ambiente de humedad, grasa y salitre se ocupa de dejar fuera de juego en pocas semanas. He fracasado con soluciones de interruptor-boya flotante para bomba de achique o un microcontrolador con sensores de nivel por resistividad.
+Ahora creo que la clave está en probar con sensores que no estén en contacto con un agua salada, aceitosa y con más de una incívica colilla blotando. 
 
 En 2018 tenemos una tecnología _open hardware_ y unos precios _AliExpress_ que nos permiten montar un detector por ultrasonidos y un controlador de motor por unos 50€.
 

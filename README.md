@@ -17,16 +17,20 @@ Este sensor tiene como dos ojos por donde emite y recibe los ultrasonidos, uno e
 ## Microcontrolador Arduino Uno
 Elegí esta placa porque es un estándar en el mundo Maker y hay infinidad de informarción y recursos para utilizarla. Además se entiende muy bien con mi MacBook.
 
-![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/ArduinoUno-callouts1.jpeg?raw=true)
+![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/ArduinoUno-callouts1.JPEG?raw=true)
 
 ## Montaje
 
 La lista completa de materiales que he utilizado:
 * [HC-SR04](http://tienda.bricogeek.com/sensores-distancia/741-sensor-de-distancia-por-ultrasonidos-hc-sr04.html?gclid=Cj0KCQjwqM3VBRCwARIsAKcekb3qY7cWrXjUY-CE1J8Xp8oWFxz3HD6KZ_uWyTUAF_bsOsXkzUNLFgcaAgegEALw_wcB) Sensor de ultrasonidos
 * [Arduino Uno](http://tienda.bricogeek.com/arduino/305-arduino-uno-0805833349009.html) Microcontrolador
-* [rele](https://www.amazon.es/dp/B01H2D2RI0/ref=cm_sw_r_em_api_c_294SAbK736BR8) Módulo de relé de 2 canales con 5V
+* [RY-1](https://www.amazon.es/dp/B01H2D2RI0/ref=cm_sw_r_em_api_c_294SAbK736BR8) Módulo de relé de 2 canales de 5V
 * [Dupont wires](https://www.amazon.es/dp/B00QV7O052/ref=cm_sw_r_em_api_c_m94SAbDEAVKVB) Cables Dupont
 * [Carcasa](https://www.amazon.es/dp/B06XCFGP9N/ref=cm_sw_r_em_api_c_N74SAbJ0VTKXJ) Carcasa fluorescente para Arduino Uno
+
+El circuito es simple. Necesitaremos 8 entradas y salidas digitales. Además utilizaremos el pin de 5V y el GND (toma de tierra). El circuito sería el siguiente:
+
+ [Esquema circuito](https://www.amazon.es/dp/B06XCFGP9N/Arduino_Uno_NivelFoso_Breadboard_bb.png)
 
 El código
 

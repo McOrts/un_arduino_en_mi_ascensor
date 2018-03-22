@@ -24,6 +24,9 @@ Elegí esta placa porque es un estándar en el mundo Maker y hay infinidad de in
 La lista completa de materiales que he utilizado:
 * [HC-SR04](http://tienda.bricogeek.com/sensores-distancia/741-sensor-de-distancia-por-ultrasonidos-hc-sr04.html?gclid=Cj0KCQjwqM3VBRCwARIsAKcekb3qY7cWrXjUY-CE1J8Xp8oWFxz3HD6KZ_uWyTUAF_bsOsXkzUNLFgcaAgegEALw_wcB) Sensor de ultrasonidos
 * [Arduino Uno](http://tienda.bricogeek.com/arduino/305-arduino-uno-0805833349009.html) Microcontrolador
+* [rele](https://www.amazon.es/dp/B01H2D2RI0/ref=cm_sw_r_em_api_c_294SAbK736BR8) Módulo de relé de 2 canales con 5V
+* [Dupont wires](https://www.amazon.es/dp/B00QV7O052/ref=cm_sw_r_em_api_c_m94SAbDEAVKVB) Cables Dupont
+* [Carcasa](https://www.amazon.es/dp/B06XCFGP9N/ref=cm_sw_r_em_api_c_N74SAbJ0VTKXJ) Carcasa fluorescente para Arduino Uno
 
 El código
 

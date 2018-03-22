@@ -17,7 +17,7 @@ Este sensor tiene como dos ojos por donde emite y recibe los ultrasonidos, uno e
 ## Microcontrolador Arduino Uno
 Elegí esta placa porque es un estándar en el mundo Maker y hay infinidad de informarción y recursos para utilizarla. Además se entiende muy bien con mi MacBook.
 
-![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/ArduinoUno-callouts1.JPEG?raw=true)
+![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/ArduinoUno-callouts1.jpg?raw=true)
 
 ## Montaje
 
@@ -30,7 +30,7 @@ La lista completa de materiales que he utilizado:
 
 El circuito es simple. Necesitaremos 8 entradas y salidas digitales. Además utilizaremos el pin de 5V y el GND (toma de tierra). El circuito sería el siguiente:
 
- [Esquema circuito](https://www.amazon.es/dp/B06XCFGP9N/Arduino_Uno_NivelFoso_Breadboard_bb.png)
+![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/Arduino_Uno_NivelFoso_Breadboard_bb.png?raw=true)
 
 El código
 

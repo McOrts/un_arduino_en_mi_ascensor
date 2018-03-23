@@ -3,7 +3,7 @@ const int PinTrig = 7;
 const int PinEcho = 6;
 
 // Configuramos el pin del rele
-const int PinRele = 8;
+const int PinRele = 9;
 
 // Constante velocidad sonido en cm/s
 const float VelSon = 34000.0;
@@ -41,6 +41,8 @@ void loop()
   Serial.print(distancia);
   Serial.print("cm");
   Serial.println();
+  
+  // Comparamos la medida con las distancias de referencia y activamos o apagamos el rele
   if (distancia < NivelMax)
   {
     digitalWrite(PinRele, HIGH);

@@ -23,6 +23,7 @@ Elegí esta placa porque es un estándar en el mundo Maker y hay infinidad de in
 
 La lista completa de materiales que he utilizado:
 * [HC-SR04](http://tienda.bricogeek.com/sensores-distancia/741-sensor-de-distancia-por-ultrasonidos-hc-sr04.html?gclid=Cj0KCQjwqM3VBRCwARIsAKcekb3qY7cWrXjUY-CE1J8Xp8oWFxz3HD6KZ_uWyTUAF_bsOsXkzUNLFgcaAgegEALw_wcB) Sensor de ultrasonidos
+* [ASoporte para HC-SR04](http://amzn.eu/b7CJg2U) Soporte para el Sensor Ultrasonidos 
 * [Arduino Uno](http://tienda.bricogeek.com/arduino/305-arduino-uno-0805833349009.html) Microcontrolador
 * [RY-1](https://www.amazon.es/dp/B01H2D2RI0/ref=cm_sw_r_em_api_c_294SAbK736BR8) Módulo de relé de 2 canales de 5V
 * [Dupont wires](https://www.amazon.es/dp/B00QV7O052/ref=cm_sw_r_em_api_c_m94SAbDEAVKVB) Cables Dupont
@@ -32,7 +33,15 @@ El circuito es simple. Necesitaremos 8 entradas y salidas digitales. Además uti
 
 ![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/Arduino_Uno_NivelFoso_Breadboard_bb.png?raw=true)
 
-El código
+Todos los componentes menos el sensor, los he colocado dentro de una caja de conexiones junto con un disyuntores guardamotor 0,16 de 32A. Para la alimentación he desmontado un adaptador 220v AC a 12v DC que tambiénhe colocado dentro:
+
+![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/caja_conexiones.jpg?raw=true)
+
+Para el sensor he utilizado un soporte de plástico azul. Pero he querido encapsularlo en gel dieléctrico a fin de proteger su circuitería de las condiciones ambientales del foso del ascensor. 
+
+![un_arduino_en_mi_ascensor](https://github.com/McOrts/un_arduino_en_mi_ascensor/blob/master/sensor_en_el_foso.jpg?raw=true)
+
+El código:
 
 ```
 // Configuramos los pines del sensor Trigger y Echo
@@ -78,6 +87,8 @@ void loop()
   Serial.print(distancia);
   Serial.print("cm");
   Serial.println();
+  
+  // Comparamos la medida con las distancias de referencia y activamos o apagamos el rele
   if (distancia < NivelMax)
   {
     digitalWrite(PinRele, HIGH);
@@ -106,3 +117,6 @@ void iniciarTrigger()
   digitalWrite(PinTrig, LOW);
 }
 ```
+
+Gracias a Luis del Valle de [ProgramarFacil](https://programarfacil.com) por inspirarme una vez más en un proyecto _maker_.
+  

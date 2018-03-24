@@ -3,7 +3,7 @@ const int PinTrig = 7;
 const int PinEcho = 6;
 
 // Configuramos el pin del rele
-const int PinRele = 9;
+const int PinRele = 8;
 
 // Constante velocidad sonido en cm/s
 const float VelSon = 34000.0;

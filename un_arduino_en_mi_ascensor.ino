@@ -3,15 +3,14 @@ const int PinTrig = 7;
 const int PinEcho = 6;
 
 // Configuramos el pin del rele
-const int PinRele = 8;
+const int PinRele = 9;
 
 // Constante velocidad sonido en cm/s
 const float VelSon = 34000.0;
 
 // Constantes de operacion
-const int NivelMax = 40;
-const int NivelMin = 60;
-const int TiempoArranque = 6000;
+const int NivelMax = 34;
+const int NivelMin = 40;
 
 float distancia;
 
@@ -45,15 +44,15 @@ void loop()
   // Comparamos la medida con las distancias de referencia y activamos o apagamos el rele
   if (distancia < NivelMax)
   {
-    digitalWrite(PinRele, HIGH);
+    digitalWrite(PinRele, LOW);
     Serial.println("on");
   }
   if (distancia > NivelMin)
   {
-    digitalWrite(PinRele, LOW);
+    digitalWrite(PinRele, HIGH);
     Serial.println("off");
   }
-  delay(500);
+  delay(5000);
 }
  
 // Método que inicia la secuencia del Trigger para comenzar a medir
